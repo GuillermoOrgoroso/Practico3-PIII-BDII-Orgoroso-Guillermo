@@ -1,0 +1,44 @@
+
+
+
+ create table persona(
+     ci INTEGER,
+     Nombre Varchar(20),
+     Apellido Varchar(20),
+     Mail Varchar(50) NOT NULL,
+     FechaHoraCreacion Timestamp,
+     Activo boolean,
+	CONSTRAINT PK_PERSONA PRIMARY KEY(ci))
+     ;
+
+	
+
+create table personaTel(
+     IDpersona integer,
+     Telefono integer,
+     FOREIGN KEY(IDpersona) REFERENCES persona(ci),
+     PRIMARY KEY(IDpersona,Telefono)
+     )
+     ;
+
+
+create table Servicio(
+    -> ID integer primary key,
+    -> Nombre Varchar(20),
+    -> CostoMensual integer,
+    -> Tipo Varchar(50),
+    -> FechaHoraCreacion Timestamp,
+    -> Activo Boolean)
+    -> ;
+exit
+
+ create table Contrata(
+    -> IDpersona integer,
+    -> IDServicio integer,
+    -> FechaCreacion date,
+    -> FechaContratacion date,
+    -> FechaFinContrato date,
+    -> FOREIGN KEY(IDpersona) REFERENCES persona(ci),
+    -> FOREIGN KEY(IDServicio) REFERENCES Servicio(ID),
+    -> PRIMARY KEY(IDpersona,IDServicio,FechaCreacion))
+    -> ;
