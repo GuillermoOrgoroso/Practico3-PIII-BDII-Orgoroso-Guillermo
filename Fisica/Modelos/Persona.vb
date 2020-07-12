@@ -18,17 +18,19 @@
     End Function
 
     Public Sub Guardar()
-        Comando.CommandText = "BEGIN WORK;"
 
+        Comando.CommandText = "BEGIN WORK;"
 
         Try
             Comando.CommandText = "INSERT INTO persona VALUES(" + Me.Id + " ','" + Me.Nombre + "','" + Me.Apellido + "','" + Me.Mail + "','" + Me.FechaHoraCreacion + "','" + Me.Activo + ")"
+            Comando.ExecuteNonQuery()
             Comando.CommandText = "INSERT INTO personaTel VALUES(" + Me.Id + "','" + Me.Telefono + ")"
             Comando.ExecuteNonQuery()
-            Comando.ExecuteNonQuery()
+
         Catch ex As Exception
             Comando.CommandText = "ROLLBACK;"
             Comando.ExecuteNonQuery()
+
             MsgBox("Intente de nuevo")
 
         End Try
@@ -39,11 +41,26 @@
 
     End Sub
 
+    Public Function Listar()
+        Comando.CommandText = "SELECT * FROM persona"
+        Comando.ExecuteReader()
+        Return Reader
+    End Function
 
     Public Sub Borrar()
-        Comando.CommandText = "DELETE FROM personas WHERE ci = " + Me.Id
+        Comando.CommandText = "DELETE FROM persona WHERE ci = " + Me.Id
+        Comando.ExecuteNonQuery()
+        Comando.CommandText = "DELETE FROM personaTel where IDpersona =" + Me.Id
+        Comando.ExecuteNonQuery()
     End Sub
 
+    Public Sub Modificar()
 
+        Comando.CommandText = "UPDATE persona SET nombre = '" + Me.Nombre + "', apellido = '" + Me.Apellido + "', email = '" + Me.Mail + "',FechaHoraCreacion = '" + Me.FechaHoraCreacion + "', activo = '" + Me.Activo + "' WHERE CI = " + Me.Id
+        Comando.ExecuteNonQuery()
+        Comando.CommandText = "UPDATE personaTel SET Telefono = '" + Me.Telefono + "' WHERE IDpersona = '" + Me.Id
+        Comando.ExecuteNonQuery()
+
+    End Sub
 
 End Class
