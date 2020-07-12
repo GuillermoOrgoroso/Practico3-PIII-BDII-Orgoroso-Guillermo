@@ -33,7 +33,7 @@
 
     Public Sub Borrar()
         Try
-            Comando.CommandText = "DELETE * FROM Contrato wehere IDpersona = " + Me.IDpersona
+            Comando.CommandText = "DELETE * FROM Contrata wehere IDpersona = " + Me.IDpersona
             Comando.ExecuteNonQuery()
             MsgBox("Baja del contrato realizada con exito")
         Catch ex As Exception
@@ -46,9 +46,9 @@
 
     Public Sub Modificar()
         Try
-            Comando.CommandText = "UPDATE Contrato SET FechaContratacion = '" + Me.FechaContratacion + "',FechaFinContato = '" + Me.FechaFinContrato + "' WHERE IDpersona = '" + Me.IDpersona + "' AND IDservicio = '" + Me.IDServicio + "' AND FechaCreacion = '" + Me.FechaCreacion
+            Comando.CommandText = "UPDATE Contrata SET FechaContratacion = '" + Me.FechaContratacion + "',FechaFinContato = '" + Me.FechaFinContrato + "' WHERE IDpersona = '" + Me.IDpersona + "' AND IDservicio = '" + Me.IDServicio + "' AND FechaCreacion = '" + Me.FechaCreacion
             Comando.ExecuteNonQuery()
-            MsgBox("Contrato modificad con exito.")
+            MsgBox("Contrato modificado con exito.")
         Catch ex As Exception
             MsgBox("Error al intentar modificar el contrato, intente de nuevo")
 
