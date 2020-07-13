@@ -73,6 +73,36 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contrata\AltaContrata.Designer.vb">
+      <DependentUpon>AltaContrata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contrata\AltaContrata.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrata\BajaContrata.Designer.vb">
+      <DependentUpon>BajaContrata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contrata\BajaContrata.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrata\EliminarContrata.Designer.vb">
+      <DependentUpon>EliminarContrata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contrata\EliminarContrata.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrata\ListarContrata.Designer.vb">
+      <DependentUpon>ListarContrata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contrata\ListarContrata.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrata\ModificarContrata.Designer.vb">
+      <DependentUpon>ModificarContrata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contrata\ModificarContrata.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Main.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -95,8 +125,83 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Registro%28Persona%29\AltaPersona.Designer.vb">
+      <DependentUpon>AltaPersona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registro%28Persona%29\AltaPersona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro%28Persona%29\BajaPersona.Designer.vb">
+      <DependentUpon>BajaPersona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registro%28Persona%29\BajaPersona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro%28Persona%29\EliminarPersona.Designer.vb">
+      <DependentUpon>EliminarPersona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registro%28Persona%29\EliminarPersona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro%28Persona%29\ListarPersona.Designer.vb">
+      <DependentUpon>ListarPersona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registro%28Persona%29\ListarPersona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro%28Persona%29\ModificarPersona.Designer.vb">
+      <DependentUpon>ModificarPersona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registro%28Persona%29\ModificarPersona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicio\AltaServicio.Designer.vb">
+      <DependentUpon>AltaServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicio\AltaServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicio\BajaServicio.Designer.vb">
+      <DependentUpon>BajaServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicio\BajaServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicio\EliminarServicio.Designer.vb">
+      <DependentUpon>EliminarServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicio\EliminarServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicio\ListarServicio.Designer.vb">
+      <DependentUpon>ListarServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicio\ListarServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicio\ModificarServicio.Designer.vb">
+      <DependentUpon>ModificarServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicio\ModificarServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Contrata\AltaContrata.resx">
+      <DependentUpon>AltaContrata.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrata\BajaContrata.resx">
+      <DependentUpon>BajaContrata.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrata\EliminarContrata.resx">
+      <DependentUpon>EliminarContrata.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrata\ListarContrata.resx">
+      <DependentUpon>ListarContrata.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrata\ModificarContrata.resx">
+      <DependentUpon>ModificarContrata.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
     </EmbeddedResource>
@@ -119,10 +224,6 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Contrata\" />
-    <Folder Include="Registro%28Persona%29\" />
-    <Folder Include="Servicio\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
