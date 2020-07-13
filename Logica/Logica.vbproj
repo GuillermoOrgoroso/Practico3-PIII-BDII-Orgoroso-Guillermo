@@ -67,7 +67,6 @@
     <Compile Include="ControladorContrata.vb" />
     <Compile Include="ControladorPersona.vb" />
     <Compile Include="ControladorServiciovb.vb" />
-    <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

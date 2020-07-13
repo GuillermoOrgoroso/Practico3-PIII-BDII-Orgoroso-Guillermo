@@ -79,12 +79,6 @@
     <Compile Include="Contrata\AltaContrata.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Contrata\BajaContrata.Designer.vb">
-      <DependentUpon>BajaContrata.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Contrata\BajaContrata.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Contrata\EliminarContrata.Designer.vb">
       <DependentUpon>EliminarContrata.vb</DependentUpon>
     </Compile>
@@ -131,12 +125,6 @@
     <Compile Include="Registro%28Persona%29\AltaPersona.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registro%28Persona%29\BajaPersona.Designer.vb">
-      <DependentUpon>BajaPersona.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Registro%28Persona%29\BajaPersona.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Registro%28Persona%29\EliminarPersona.Designer.vb">
       <DependentUpon>EliminarPersona.vb</DependentUpon>
     </Compile>
@@ -159,12 +147,6 @@
       <DependentUpon>AltaServicio.vb</DependentUpon>
     </Compile>
     <Compile Include="Servicio\AltaServicio.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Servicio\BajaServicio.Designer.vb">
-      <DependentUpon>BajaServicio.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Servicio\BajaServicio.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Servicio\EliminarServicio.Designer.vb">
@@ -190,9 +172,6 @@
     <EmbeddedResource Include="Contrata\AltaContrata.resx">
       <DependentUpon>AltaContrata.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Contrata\BajaContrata.resx">
-      <DependentUpon>BajaContrata.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Contrata\EliminarContrata.resx">
       <DependentUpon>EliminarContrata.vb</DependentUpon>
     </EmbeddedResource>
@@ -214,9 +193,6 @@
     <EmbeddedResource Include="Registro%28Persona%29\AltaPersona.resx">
       <DependentUpon>AltaPersona.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Registro%28Persona%29\BajaPersona.resx">
-      <DependentUpon>BajaPersona.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Registro%28Persona%29\EliminarPersona.resx">
       <DependentUpon>EliminarPersona.vb</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +201,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registro%28Persona%29\ModificarPersona.resx">
       <DependentUpon>ModificarPersona.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicio\AltaServicio.resx">
+      <DependentUpon>AltaServicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicio\EliminarServicio.resx">
+      <DependentUpon>EliminarServicio.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
