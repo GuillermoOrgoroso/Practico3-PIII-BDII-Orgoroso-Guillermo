@@ -1,0 +1,3 @@
+﻿Module ControladorContrata
+
+End Module
