@@ -58,9 +58,10 @@
 
         Comando.CommandText = "UPDATE persona SET nombre = '" + Me.Nombre + "', apellido = '" + Me.Apellido + "', email = '" + Me.Mail + "',FechaHoraCreacion = '" + Me.FechaHoraCreacion + "', activo = '" + Me.Activo + "' WHERE CI = " + Me.Id
         Comando.ExecuteNonQuery()
-        Comando.CommandText = "UPDATE personaTel SET Telefono = '" + Me.Telefono + "' WHERE IDpersona = '" + Me.Id
-        Comando.ExecuteNonQuery()
 
     End Sub
-
+    Public Sub ModificarTel()
+        Comando.CommandText = "UPDATE personaTel SET Telefono = '" + Me.Telefono + "' WHERE IDpersona = '" + Me.Id
+        Comando.ExecuteNonQuery()
+    End Sub
 End Class

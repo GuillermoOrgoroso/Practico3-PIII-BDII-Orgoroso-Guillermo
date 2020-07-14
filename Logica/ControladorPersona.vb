@@ -40,6 +40,16 @@ Module ControladorPersona
         p.Modificar()
     End Sub
 
+    Public Sub ModificarTel(id As String, telefono As String)
+
+        Dim p As New Persona
+        p.Id = id
+        p.Telefono = telefono
+
+        p.ModificarTel()
+
+    End Sub
+
     Public Function ObtenerCantidad()
 
         Dim p As New Persona
