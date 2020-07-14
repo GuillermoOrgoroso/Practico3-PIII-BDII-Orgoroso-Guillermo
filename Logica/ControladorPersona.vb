@@ -1,5 +1,5 @@
 ﻿Imports Fisica
-Module ControladorPersona
+Public Module ControladorPersona
     Public Sub DarAlta(id As String, nombre As String, apellido As String, mail As String, fechahoracreacion As String, activo As Boolean, telefono As String)
         Dim p As New Persona
         p.Id = id

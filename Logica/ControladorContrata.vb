@@ -2,7 +2,7 @@
 
 Imports Fisica
 
-Module ControladorContrata
+Public Module ControladorContrata
 
     Public Function Listar()
 

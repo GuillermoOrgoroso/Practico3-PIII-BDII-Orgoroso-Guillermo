@@ -1,6 +1,6 @@
 ﻿Imports Fisica
 
-Module ControladorServiciovb
+Public Module ControladorServiciovb
 
 
 

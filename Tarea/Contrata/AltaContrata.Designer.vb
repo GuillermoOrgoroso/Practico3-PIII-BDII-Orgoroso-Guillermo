@@ -33,7 +33,7 @@ Partial Class AltaContrata
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.BtnDarAlta = New System.Windows.Forms.Button()
+        Me.btnDarAlta = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'txtIDPersona
@@ -126,21 +126,21 @@ Partial Class AltaContrata
         Me.Label6.TabIndex = 10
         Me.Label6.Text = "Alta contrata"
         '
-        'BtnDarAlta
+        'btnDarAlta
         '
-        Me.BtnDarAlta.Location = New System.Drawing.Point(130, 230)
-        Me.BtnDarAlta.Name = "BtnDarAlta"
-        Me.BtnDarAlta.Size = New System.Drawing.Size(100, 23)
-        Me.BtnDarAlta.TabIndex = 11
-        Me.BtnDarAlta.Text = "Dar alta"
-        Me.BtnDarAlta.UseVisualStyleBackColor = True
+        Me.btnDarAlta.Location = New System.Drawing.Point(145, 238)
+        Me.btnDarAlta.Name = "btnDarAlta"
+        Me.btnDarAlta.Size = New System.Drawing.Size(75, 23)
+        Me.btnDarAlta.TabIndex = 11
+        Me.btnDarAlta.Text = "Dar alta"
+        Me.btnDarAlta.UseVisualStyleBackColor = True
         '
         'AltaContrata
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(268, 287)
-        Me.Controls.Add(Me.BtnDarAlta)
+        Me.Controls.Add(Me.btnDarAlta)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -170,5 +170,5 @@ Partial Class AltaContrata
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents BtnDarAlta As Button
+    Friend WithEvents btnDarAlta As Button
 End Class
