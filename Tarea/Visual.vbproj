@@ -211,6 +211,9 @@
     <EmbeddedResource Include="Servicio\ListarServicio.resx">
       <DependentUpon>ListarServicio.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Servicio\ModificarServicio.resx">
+      <DependentUpon>ModificarServicio.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">

@@ -22,14 +22,14 @@ Partial Class ModificarPersona
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.RBActivo = New System.Windows.Forms.RadioButton()
+        Me.rdoActivo = New System.Windows.Forms.RadioButton()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtTelefono = New System.Windows.Forms.TextBox()
+        Me.txtFechaHoraCreacion = New System.Windows.Forms.TextBox()
+        Me.txtMail = New System.Windows.Forms.TextBox()
+        Me.txtApellido = New System.Windows.Forms.TextBox()
+        Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.txtCi = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -38,19 +38,19 @@ Partial Class ModificarPersona
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnModificar = New System.Windows.Forms.Button()
-        Me.RBNoActivo = New System.Windows.Forms.RadioButton()
+        Me.rdoInactivo = New System.Windows.Forms.RadioButton()
         Me.SuspendLayout()
         '
-        'RBActivo
+        'rdoActivo
         '
-        Me.RBActivo.AutoSize = True
-        Me.RBActivo.Location = New System.Drawing.Point(153, 246)
-        Me.RBActivo.Name = "RBActivo"
-        Me.RBActivo.Size = New System.Drawing.Size(55, 17)
-        Me.RBActivo.TabIndex = 32
-        Me.RBActivo.TabStop = True
-        Me.RBActivo.Text = "Activo"
-        Me.RBActivo.UseVisualStyleBackColor = True
+        Me.rdoActivo.AutoSize = True
+        Me.rdoActivo.Location = New System.Drawing.Point(153, 246)
+        Me.rdoActivo.Name = "rdoActivo"
+        Me.rdoActivo.Size = New System.Drawing.Size(55, 17)
+        Me.rdoActivo.TabIndex = 32
+        Me.rdoActivo.TabStop = True
+        Me.rdoActivo.Text = "Activo"
+        Me.rdoActivo.UseVisualStyleBackColor = True
         '
         'Label8
         '
@@ -62,47 +62,47 @@ Partial Class ModificarPersona
         Me.Label8.TabIndex = 31
         Me.Label8.Text = "Modificar persona"
         '
-        'TextBox7
+        'txtTelefono
         '
-        Me.TextBox7.Location = New System.Drawing.Point(153, 211)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(117, 20)
-        Me.TextBox7.TabIndex = 30
+        Me.txtTelefono.Location = New System.Drawing.Point(153, 211)
+        Me.txtTelefono.Name = "txtTelefono"
+        Me.txtTelefono.Size = New System.Drawing.Size(117, 20)
+        Me.txtTelefono.TabIndex = 30
         '
-        'TextBox5
+        'txtFechaHoraCreacion
         '
-        Me.TextBox5.Location = New System.Drawing.Point(153, 184)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(117, 20)
-        Me.TextBox5.TabIndex = 29
+        Me.txtFechaHoraCreacion.Location = New System.Drawing.Point(153, 184)
+        Me.txtFechaHoraCreacion.Name = "txtFechaHoraCreacion"
+        Me.txtFechaHoraCreacion.Size = New System.Drawing.Size(117, 20)
+        Me.txtFechaHoraCreacion.TabIndex = 29
         '
-        'TextBox4
+        'txtMail
         '
-        Me.TextBox4.Location = New System.Drawing.Point(153, 157)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(117, 20)
-        Me.TextBox4.TabIndex = 28
+        Me.txtMail.Location = New System.Drawing.Point(153, 157)
+        Me.txtMail.Name = "txtMail"
+        Me.txtMail.Size = New System.Drawing.Size(117, 20)
+        Me.txtMail.TabIndex = 28
         '
-        'TextBox3
+        'txtApellido
         '
-        Me.TextBox3.Location = New System.Drawing.Point(153, 131)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(117, 20)
-        Me.TextBox3.TabIndex = 27
+        Me.txtApellido.Location = New System.Drawing.Point(153, 131)
+        Me.txtApellido.Name = "txtApellido"
+        Me.txtApellido.Size = New System.Drawing.Size(117, 20)
+        Me.txtApellido.TabIndex = 27
         '
-        'TextBox2
+        'txtNombre
         '
-        Me.TextBox2.Location = New System.Drawing.Point(153, 104)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(117, 20)
-        Me.TextBox2.TabIndex = 26
+        Me.txtNombre.Location = New System.Drawing.Point(153, 104)
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(117, 20)
+        Me.txtNombre.TabIndex = 26
         '
-        'TextBox1
+        'txtCi
         '
-        Me.TextBox1.Location = New System.Drawing.Point(153, 78)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(117, 20)
-        Me.TextBox1.TabIndex = 25
+        Me.txtCi.Location = New System.Drawing.Point(153, 78)
+        Me.txtCi.Name = "txtCi"
+        Me.txtCi.Size = New System.Drawing.Size(117, 20)
+        Me.txtCi.TabIndex = 25
         '
         'Label7
         '
@@ -176,31 +176,31 @@ Partial Class ModificarPersona
         Me.btnModificar.Text = "Modificar"
         Me.btnModificar.UseVisualStyleBackColor = True
         '
-        'RBNoActivo
+        'rdoInactivo
         '
-        Me.RBNoActivo.AutoSize = True
-        Me.RBNoActivo.Location = New System.Drawing.Point(214, 246)
-        Me.RBNoActivo.Name = "RBNoActivo"
-        Me.RBNoActivo.Size = New System.Drawing.Size(71, 17)
-        Me.RBNoActivo.TabIndex = 33
-        Me.RBNoActivo.TabStop = True
-        Me.RBNoActivo.Text = "No activo"
-        Me.RBNoActivo.UseVisualStyleBackColor = True
+        Me.rdoInactivo.AutoSize = True
+        Me.rdoInactivo.Location = New System.Drawing.Point(214, 246)
+        Me.rdoInactivo.Name = "rdoInactivo"
+        Me.rdoInactivo.Size = New System.Drawing.Size(71, 17)
+        Me.rdoInactivo.TabIndex = 33
+        Me.rdoInactivo.TabStop = True
+        Me.rdoInactivo.Text = "No activo"
+        Me.rdoInactivo.UseVisualStyleBackColor = True
         '
         'ModificarPersona
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(329, 328)
-        Me.Controls.Add(Me.RBNoActivo)
-        Me.Controls.Add(Me.RBActivo)
+        Me.Controls.Add(Me.rdoInactivo)
+        Me.Controls.Add(Me.rdoActivo)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtTelefono)
+        Me.Controls.Add(Me.txtFechaHoraCreacion)
+        Me.Controls.Add(Me.txtMail)
+        Me.Controls.Add(Me.txtApellido)
+        Me.Controls.Add(Me.txtNombre)
+        Me.Controls.Add(Me.txtCi)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -216,14 +216,14 @@ Partial Class ModificarPersona
 
     End Sub
 
-    Friend WithEvents RBActivo As RadioButton
+    Friend WithEvents rdoActivo As RadioButton
     Friend WithEvents Label8 As Label
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtTelefono As TextBox
+    Friend WithEvents txtFechaHoraCreacion As TextBox
+    Friend WithEvents txtMail As TextBox
+    Friend WithEvents txtApellido As TextBox
+    Friend WithEvents txtNombre As TextBox
+    Friend WithEvents txtCi As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
@@ -232,5 +232,5 @@ Partial Class ModificarPersona
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents btnModificar As Button
-    Friend WithEvents RBNoActivo As RadioButton
+    Friend WithEvents rdoInactivo As RadioButton
 End Class

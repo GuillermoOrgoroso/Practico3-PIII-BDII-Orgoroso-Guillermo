@@ -24,22 +24,19 @@ Partial Class Main
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ServicioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RegistroToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ContratoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AltaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BajaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RegistroToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AltaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.BajaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EliminarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ListarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ContratoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AltaToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.BajaToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificarToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EliminarToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListarToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -55,24 +52,10 @@ Partial Class Main
         '
         'ServicioToolStripMenuItem
         '
-        Me.ServicioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaToolStripMenuItem, Me.BajaToolStripMenuItem, Me.ModificarToolStripMenuItem, Me.EliminarToolStripMenuItem, Me.ListarToolStripMenuItem})
+        Me.ServicioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaToolStripMenuItem, Me.BajaToolStripMenuItem, Me.ModificarToolStripMenuItem, Me.ListarToolStripMenuItem})
         Me.ServicioToolStripMenuItem.Name = "ServicioToolStripMenuItem"
         Me.ServicioToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
         Me.ServicioToolStripMenuItem.Text = "Servicio"
-        '
-        'RegistroToolStripMenuItem
-        '
-        Me.RegistroToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaToolStripMenuItem1, Me.BajaToolStripMenuItem1, Me.ModificarToolStripMenuItem1, Me.EliminarToolStripMenuItem1, Me.ListarToolStripMenuItem1})
-        Me.RegistroToolStripMenuItem.Name = "RegistroToolStripMenuItem"
-        Me.RegistroToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
-        Me.RegistroToolStripMenuItem.Text = "Registro"
-        '
-        'ContratoToolStripMenuItem
-        '
-        Me.ContratoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaToolStripMenuItem2, Me.BajaToolStripMenuItem2, Me.ModificarToolStripMenuItem2, Me.EliminarToolStripMenuItem2, Me.ListarToolStripMenuItem2})
-        Me.ContratoToolStripMenuItem.Name = "ContratoToolStripMenuItem"
-        Me.ContratoToolStripMenuItem.Size = New System.Drawing.Size(66, 20)
-        Me.ContratoToolStripMenuItem.Text = "Contrato"
         '
         'AltaToolStripMenuItem
         '
@@ -92,11 +75,18 @@ Partial Class Main
         Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ModificarToolStripMenuItem.Text = "Modificar"
         '
-        'EliminarToolStripMenuItem
+        'ListarToolStripMenuItem
         '
-        Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
-        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.EliminarToolStripMenuItem.Text = "Eliminar"
+        Me.ListarToolStripMenuItem.Name = "ListarToolStripMenuItem"
+        Me.ListarToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ListarToolStripMenuItem.Text = "Listar"
+        '
+        'RegistroToolStripMenuItem
+        '
+        Me.RegistroToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaToolStripMenuItem1, Me.BajaToolStripMenuItem1, Me.ModificarToolStripMenuItem1, Me.ListarToolStripMenuItem1})
+        Me.RegistroToolStripMenuItem.Name = "RegistroToolStripMenuItem"
+        Me.RegistroToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
+        Me.RegistroToolStripMenuItem.Text = "Registro"
         '
         'AltaToolStripMenuItem1
         '
@@ -116,23 +106,18 @@ Partial Class Main
         Me.ModificarToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.ModificarToolStripMenuItem1.Text = "Modificar"
         '
-        'EliminarToolStripMenuItem1
-        '
-        Me.EliminarToolStripMenuItem1.Name = "EliminarToolStripMenuItem1"
-        Me.EliminarToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
-        Me.EliminarToolStripMenuItem1.Text = "Eliminar"
-        '
-        'ListarToolStripMenuItem
-        '
-        Me.ListarToolStripMenuItem.Name = "ListarToolStripMenuItem"
-        Me.ListarToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.ListarToolStripMenuItem.Text = "Listar"
-        '
         'ListarToolStripMenuItem1
         '
         Me.ListarToolStripMenuItem1.Name = "ListarToolStripMenuItem1"
         Me.ListarToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.ListarToolStripMenuItem1.Text = "Listar"
+        '
+        'ContratoToolStripMenuItem
+        '
+        Me.ContratoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaToolStripMenuItem2, Me.BajaToolStripMenuItem2, Me.ModificarToolStripMenuItem2, Me.ListarToolStripMenuItem2})
+        Me.ContratoToolStripMenuItem.Name = "ContratoToolStripMenuItem"
+        Me.ContratoToolStripMenuItem.Size = New System.Drawing.Size(66, 20)
+        Me.ContratoToolStripMenuItem.Text = "Contrato"
         '
         'AltaToolStripMenuItem2
         '
@@ -151,12 +136,6 @@ Partial Class Main
         Me.ModificarToolStripMenuItem2.Name = "ModificarToolStripMenuItem2"
         Me.ModificarToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
         Me.ModificarToolStripMenuItem2.Text = "Modificar"
-        '
-        'EliminarToolStripMenuItem2
-        '
-        Me.EliminarToolStripMenuItem2.Name = "EliminarToolStripMenuItem2"
-        Me.EliminarToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
-        Me.EliminarToolStripMenuItem2.Text = "Eliminar"
         '
         'ListarToolStripMenuItem2
         '
@@ -185,18 +164,15 @@ Partial Class Main
     Friend WithEvents AltaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BajaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ModificarToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents EliminarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ListarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RegistroToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AltaToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents BajaToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ModificarToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents EliminarToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ListarToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ContratoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AltaToolStripMenuItem2 As ToolStripMenuItem
     Friend WithEvents BajaToolStripMenuItem2 As ToolStripMenuItem
     Friend WithEvents ModificarToolStripMenuItem2 As ToolStripMenuItem
-    Friend WithEvents EliminarToolStripMenuItem2 As ToolStripMenuItem
     Friend WithEvents ListarToolStripMenuItem2 As ToolStripMenuItem
 End Class

@@ -33,13 +33,14 @@ Partial Class AltaServicio
         Me.btnDarAlta = New System.Windows.Forms.Button()
         Me.txtFechoYhora = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
+        Me.rdoLimpieza = New System.Windows.Forms.RadioButton()
+        Me.rdoMantenimiento = New System.Windows.Forms.RadioButton()
+        Me.rdoElectricidad = New System.Windows.Forms.RadioButton()
+        Me.rdoTelecomunicaciones = New System.Windows.Forms.RadioButton()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton6 = New System.Windows.Forms.RadioButton()
+        Me.rdoActivo = New System.Windows.Forms.RadioButton()
+        Me.rdoInactivo = New System.Windows.Forms.RadioButton()
+        Me.rdoInformatica = New System.Windows.Forms.RadioButton()
         Me.SuspendLayout()
         '
         'Label1
@@ -112,9 +113,9 @@ Partial Class AltaServicio
         '
         'btnDarAlta
         '
-        Me.btnDarAlta.Location = New System.Drawing.Point(505, 321)
+        Me.btnDarAlta.Location = New System.Drawing.Point(180, 347)
         Me.btnDarAlta.Name = "btnDarAlta"
-        Me.btnDarAlta.Size = New System.Drawing.Size(75, 23)
+        Me.btnDarAlta.Size = New System.Drawing.Size(388, 23)
         Me.btnDarAlta.TabIndex = 9
         Me.btnDarAlta.Text = "Dar alta"
         Me.btnDarAlta.UseVisualStyleBackColor = True
@@ -135,49 +136,49 @@ Partial Class AltaServicio
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "Fecha y hora de creacion"
         '
-        'RadioButton1
+        'rdoLimpieza
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(50, 268)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton1.TabIndex = 14
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "RadioButton1"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.rdoLimpieza.AutoSize = True
+        Me.rdoLimpieza.Location = New System.Drawing.Point(50, 268)
+        Me.rdoLimpieza.Name = "rdoLimpieza"
+        Me.rdoLimpieza.Size = New System.Drawing.Size(66, 17)
+        Me.rdoLimpieza.TabIndex = 14
+        Me.rdoLimpieza.TabStop = True
+        Me.rdoLimpieza.Text = "Limpieza"
+        Me.rdoLimpieza.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'rdoMantenimiento
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(146, 268)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton2.TabIndex = 15
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "RadioButton2"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.rdoMantenimiento.AutoSize = True
+        Me.rdoMantenimiento.Location = New System.Drawing.Point(146, 268)
+        Me.rdoMantenimiento.Name = "rdoMantenimiento"
+        Me.rdoMantenimiento.Size = New System.Drawing.Size(94, 17)
+        Me.rdoMantenimiento.TabIndex = 15
+        Me.rdoMantenimiento.TabStop = True
+        Me.rdoMantenimiento.Text = "Mantenimiento"
+        Me.rdoMantenimiento.UseVisualStyleBackColor = True
         '
-        'RadioButton3
+        'rdoElectricidad
         '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(242, 268)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton3.TabIndex = 16
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "RadioButton3"
-        Me.RadioButton3.UseVisualStyleBackColor = True
+        Me.rdoElectricidad.AutoSize = True
+        Me.rdoElectricidad.Location = New System.Drawing.Point(242, 268)
+        Me.rdoElectricidad.Name = "rdoElectricidad"
+        Me.rdoElectricidad.Size = New System.Drawing.Size(80, 17)
+        Me.rdoElectricidad.TabIndex = 16
+        Me.rdoElectricidad.TabStop = True
+        Me.rdoElectricidad.Text = "Electricidad"
+        Me.rdoElectricidad.UseVisualStyleBackColor = True
         '
-        'RadioButton4
+        'rdoTelecomunicaciones
         '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(338, 268)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton4.TabIndex = 17
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "RadioButton4"
-        Me.RadioButton4.UseVisualStyleBackColor = True
+        Me.rdoTelecomunicaciones.AutoSize = True
+        Me.rdoTelecomunicaciones.Location = New System.Drawing.Point(338, 268)
+        Me.rdoTelecomunicaciones.Name = "rdoTelecomunicaciones"
+        Me.rdoTelecomunicaciones.Size = New System.Drawing.Size(123, 17)
+        Me.rdoTelecomunicaciones.TabIndex = 17
+        Me.rdoTelecomunicaciones.TabStop = True
+        Me.rdoTelecomunicaciones.Text = "Telecomunicaciones"
+        Me.rdoTelecomunicaciones.UseVisualStyleBackColor = True
         '
         'Label7
         '
@@ -189,42 +190,54 @@ Partial Class AltaServicio
         Me.Label7.TabIndex = 18
         Me.Label7.Text = "Activo/inactivo"
         '
-        'RadioButton5
+        'rdoActivo
         '
-        Me.RadioButton5.AutoSize = True
-        Me.RadioButton5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton5.Location = New System.Drawing.Point(50, 350)
-        Me.RadioButton5.Name = "RadioButton5"
-        Me.RadioButton5.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton5.TabIndex = 19
-        Me.RadioButton5.TabStop = True
-        Me.RadioButton5.Text = "RadioButton5"
-        Me.RadioButton5.UseVisualStyleBackColor = True
+        Me.rdoActivo.AutoSize = True
+        Me.rdoActivo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdoActivo.Location = New System.Drawing.Point(50, 350)
+        Me.rdoActivo.Name = "rdoActivo"
+        Me.rdoActivo.Size = New System.Drawing.Size(55, 17)
+        Me.rdoActivo.TabIndex = 19
+        Me.rdoActivo.TabStop = True
+        Me.rdoActivo.Text = "Activo"
+        Me.rdoActivo.UseVisualStyleBackColor = True
         '
-        'RadioButton6
+        'rdoInactivo
         '
-        Me.RadioButton6.AutoSize = True
-        Me.RadioButton6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton6.Location = New System.Drawing.Point(146, 350)
-        Me.RadioButton6.Name = "RadioButton6"
-        Me.RadioButton6.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton6.TabIndex = 20
-        Me.RadioButton6.TabStop = True
-        Me.RadioButton6.Text = "RadioButton6"
-        Me.RadioButton6.UseVisualStyleBackColor = True
+        Me.rdoInactivo.AutoSize = True
+        Me.rdoInactivo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdoInactivo.Location = New System.Drawing.Point(111, 350)
+        Me.rdoInactivo.Name = "rdoInactivo"
+        Me.rdoInactivo.Size = New System.Drawing.Size(63, 17)
+        Me.rdoInactivo.TabIndex = 20
+        Me.rdoInactivo.TabStop = True
+        Me.rdoInactivo.Text = "Inactivo"
+        Me.rdoInactivo.UseVisualStyleBackColor = True
+        '
+        'rdoInformatica
+        '
+        Me.rdoInformatica.AutoSize = True
+        Me.rdoInformatica.Location = New System.Drawing.Point(467, 268)
+        Me.rdoInformatica.Name = "rdoInformatica"
+        Me.rdoInformatica.Size = New System.Drawing.Size(77, 17)
+        Me.rdoInformatica.TabIndex = 21
+        Me.rdoInformatica.TabStop = True
+        Me.rdoInformatica.Text = "Informatica"
+        Me.rdoInformatica.UseVisualStyleBackColor = True
         '
         'AltaServicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.RadioButton6)
-        Me.Controls.Add(Me.RadioButton5)
+        Me.ClientSize = New System.Drawing.Size(580, 422)
+        Me.Controls.Add(Me.rdoInformatica)
+        Me.Controls.Add(Me.rdoInactivo)
+        Me.Controls.Add(Me.rdoActivo)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.RadioButton4)
-        Me.Controls.Add(Me.RadioButton3)
-        Me.Controls.Add(Me.RadioButton2)
-        Me.Controls.Add(Me.RadioButton1)
+        Me.Controls.Add(Me.rdoTelecomunicaciones)
+        Me.Controls.Add(Me.rdoElectricidad)
+        Me.Controls.Add(Me.rdoMantenimiento)
+        Me.Controls.Add(Me.rdoLimpieza)
         Me.Controls.Add(Me.txtFechoYhora)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.btnDarAlta)
@@ -254,11 +267,12 @@ Partial Class AltaServicio
     Friend WithEvents btnDarAlta As Button
     Friend WithEvents txtFechoYhora As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton4 As RadioButton
+    Friend WithEvents rdoLimpieza As RadioButton
+    Friend WithEvents rdoMantenimiento As RadioButton
+    Friend WithEvents rdoElectricidad As RadioButton
+    Friend WithEvents rdoTelecomunicaciones As RadioButton
     Friend WithEvents Label7 As Label
-    Friend WithEvents RadioButton5 As RadioButton
-    Friend WithEvents RadioButton6 As RadioButton
+    Friend WithEvents rdoActivo As RadioButton
+    Friend WithEvents rdoInactivo As RadioButton
+    Friend WithEvents rdoInformatica As RadioButton
 End Class

@@ -30,14 +30,14 @@ Partial Class AltaPersona
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.txtCi = New System.Windows.Forms.TextBox()
+        Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.txtApellido = New System.Windows.Forms.TextBox()
+        Me.txtMail = New System.Windows.Forms.TextBox()
+        Me.txtFechaHoraCreacion = New System.Windows.Forms.TextBox()
+        Me.txtTelefono = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.RBActivo = New System.Windows.Forms.RadioButton()
+        Me.rdoActivo = New System.Windows.Forms.RadioButton()
         Me.SuspendLayout()
         '
         'btnDarAlta
@@ -112,47 +112,47 @@ Partial Class AltaPersona
         Me.Label7.TabIndex = 7
         Me.Label7.Text = "Telefono"
         '
-        'TextBox1
+        'txtCi
         '
-        Me.TextBox1.Location = New System.Drawing.Point(134, 74)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(117, 20)
-        Me.TextBox1.TabIndex = 8
+        Me.txtCi.Location = New System.Drawing.Point(134, 74)
+        Me.txtCi.Name = "txtCi"
+        Me.txtCi.Size = New System.Drawing.Size(117, 20)
+        Me.txtCi.TabIndex = 8
         '
-        'TextBox2
+        'txtNombre
         '
-        Me.TextBox2.Location = New System.Drawing.Point(134, 100)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(117, 20)
-        Me.TextBox2.TabIndex = 9
+        Me.txtNombre.Location = New System.Drawing.Point(134, 100)
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(117, 20)
+        Me.txtNombre.TabIndex = 9
         '
-        'TextBox3
+        'txtApellido
         '
-        Me.TextBox3.Location = New System.Drawing.Point(134, 127)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(117, 20)
-        Me.TextBox3.TabIndex = 10
+        Me.txtApellido.Location = New System.Drawing.Point(134, 127)
+        Me.txtApellido.Name = "txtApellido"
+        Me.txtApellido.Size = New System.Drawing.Size(117, 20)
+        Me.txtApellido.TabIndex = 10
         '
-        'TextBox4
+        'txtMail
         '
-        Me.TextBox4.Location = New System.Drawing.Point(134, 153)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(117, 20)
-        Me.TextBox4.TabIndex = 11
+        Me.txtMail.Location = New System.Drawing.Point(134, 153)
+        Me.txtMail.Name = "txtMail"
+        Me.txtMail.Size = New System.Drawing.Size(117, 20)
+        Me.txtMail.TabIndex = 11
         '
-        'TextBox5
+        'txtFechaHoraCreacion
         '
-        Me.TextBox5.Location = New System.Drawing.Point(134, 180)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(117, 20)
-        Me.TextBox5.TabIndex = 12
+        Me.txtFechaHoraCreacion.Location = New System.Drawing.Point(134, 180)
+        Me.txtFechaHoraCreacion.Name = "txtFechaHoraCreacion"
+        Me.txtFechaHoraCreacion.Size = New System.Drawing.Size(117, 20)
+        Me.txtFechaHoraCreacion.TabIndex = 12
         '
-        'TextBox7
+        'txtTelefono
         '
-        Me.TextBox7.Location = New System.Drawing.Point(134, 207)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(117, 20)
-        Me.TextBox7.TabIndex = 14
+        Me.txtTelefono.Location = New System.Drawing.Point(134, 207)
+        Me.txtTelefono.Name = "txtTelefono"
+        Me.txtTelefono.Size = New System.Drawing.Size(117, 20)
+        Me.txtTelefono.TabIndex = 14
         '
         'Label8
         '
@@ -164,30 +164,30 @@ Partial Class AltaPersona
         Me.Label8.TabIndex = 15
         Me.Label8.Text = "Alta persona"
         '
-        'RBActivo
+        'rdoActivo
         '
-        Me.RBActivo.AutoSize = True
-        Me.RBActivo.Location = New System.Drawing.Point(134, 242)
-        Me.RBActivo.Name = "RBActivo"
-        Me.RBActivo.Size = New System.Drawing.Size(148, 17)
-        Me.RBActivo.TabIndex = 16
-        Me.RBActivo.TabStop = True
-        Me.RBActivo.Text = "Selecciones si esta activo"
-        Me.RBActivo.UseVisualStyleBackColor = True
+        Me.rdoActivo.AutoSize = True
+        Me.rdoActivo.Location = New System.Drawing.Point(134, 242)
+        Me.rdoActivo.Name = "rdoActivo"
+        Me.rdoActivo.Size = New System.Drawing.Size(148, 17)
+        Me.rdoActivo.TabIndex = 16
+        Me.rdoActivo.TabStop = True
+        Me.rdoActivo.Text = "Selecciones si esta activo"
+        Me.rdoActivo.UseVisualStyleBackColor = True
         '
         'AltaPersona
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(329, 357)
-        Me.Controls.Add(Me.RBActivo)
+        Me.Controls.Add(Me.rdoActivo)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtTelefono)
+        Me.Controls.Add(Me.txtFechaHoraCreacion)
+        Me.Controls.Add(Me.txtMail)
+        Me.Controls.Add(Me.txtApellido)
+        Me.Controls.Add(Me.txtNombre)
+        Me.Controls.Add(Me.txtCi)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -211,12 +211,12 @@ Partial Class AltaPersona
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents txtCi As TextBox
+    Friend WithEvents txtNombre As TextBox
+    Friend WithEvents txtApellido As TextBox
+    Friend WithEvents txtMail As TextBox
+    Friend WithEvents txtFechaHoraCreacion As TextBox
+    Friend WithEvents txtTelefono As TextBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents RBActivo As RadioButton
+    Friend WithEvents rdoActivo As RadioButton
 End Class
