@@ -24,7 +24,7 @@ Partial Class EliminarServicio
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtCI = New System.Windows.Forms.TextBox()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -47,12 +47,12 @@ Partial Class EliminarServicio
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "CI Persona"
         '
-        'TextBox1
+        'txtCI
         '
-        Me.TextBox1.Location = New System.Drawing.Point(77, 68)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 2
+        Me.txtCI.Location = New System.Drawing.Point(77, 68)
+        Me.txtCI.Name = "txtCI"
+        Me.txtCI.Size = New System.Drawing.Size(100, 20)
+        Me.txtCI.TabIndex = 2
         '
         'btnEliminar
         '
@@ -69,7 +69,7 @@ Partial Class EliminarServicio
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(198, 145)
         Me.Controls.Add(Me.btnEliminar)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtCI)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "EliminarServicio"
@@ -81,6 +81,6 @@ Partial Class EliminarServicio
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtCI As TextBox
     Friend WithEvents btnEliminar As Button
 End Class
