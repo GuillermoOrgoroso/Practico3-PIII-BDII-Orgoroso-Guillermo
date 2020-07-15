@@ -1,0 +1,10 @@
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Fisica\bin\Debug\Fisica.dll
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Fisica\bin\Debug\Fisica.pdb
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Fisica\bin\Debug\Fisica.xml
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Fisica\obj\Debug\Fisica.vbprojAssemblyReference.cache
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Fisica\obj\Debug\Fisica.Resources.resources
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Fisica\obj\Debug\Fisica.vbproj.GenerateResource.cache
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Fisica\obj\Debug\Fisica.vbproj.CoreCompileInputs.cache
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Fisica\obj\Debug\Fisica.dll
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Fisica\obj\Debug\Fisica.xml
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Fisica\obj\Debug\Fisica.pdb

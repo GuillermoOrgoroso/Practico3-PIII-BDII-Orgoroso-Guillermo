@@ -1,0 +1,14 @@
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Logica\bin\Debug\Logica.dll
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Logica\bin\Debug\Logica.pdb
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Logica\bin\Debug\Logica.xml
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Logica\bin\Debug\Fisica.dll
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Logica\bin\Debug\Fisica.pdb
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Logica\bin\Debug\Fisica.xml
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Logica\obj\Debug\Logica.vbprojAssemblyReference.cache
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Logica\obj\Debug\Logica.Resources.resources
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Logica\obj\Debug\Logica.vbproj.GenerateResource.cache
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Logica\obj\Debug\Logica.vbproj.CoreCompileInputs.cache
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Logica\obj\Debug\Logica.vbproj.CopyComplete
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Logica\obj\Debug\Logica.dll
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Logica\obj\Debug\Logica.xml
+C:\Users\guill\source\repos\EjemploCapasBD\TareaProgBd\Logica\obj\Debug\Logica.pdb

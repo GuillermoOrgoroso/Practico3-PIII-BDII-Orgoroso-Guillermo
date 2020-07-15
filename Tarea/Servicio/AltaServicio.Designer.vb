@@ -38,9 +38,8 @@ Partial Class AltaServicio
         Me.rdoElectricidad = New System.Windows.Forms.RadioButton()
         Me.rdoTelecomunicaciones = New System.Windows.Forms.RadioButton()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.rdoActivo = New System.Windows.Forms.RadioButton()
-        Me.rdoInactivo = New System.Windows.Forms.RadioButton()
         Me.rdoInformatica = New System.Windows.Forms.RadioButton()
+        Me.chkActivo = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -190,30 +189,6 @@ Partial Class AltaServicio
         Me.Label7.TabIndex = 18
         Me.Label7.Text = "Activo/inactivo"
         '
-        'rdoActivo
-        '
-        Me.rdoActivo.AutoSize = True
-        Me.rdoActivo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdoActivo.Location = New System.Drawing.Point(50, 350)
-        Me.rdoActivo.Name = "rdoActivo"
-        Me.rdoActivo.Size = New System.Drawing.Size(55, 17)
-        Me.rdoActivo.TabIndex = 19
-        Me.rdoActivo.TabStop = True
-        Me.rdoActivo.Text = "Activo"
-        Me.rdoActivo.UseVisualStyleBackColor = True
-        '
-        'rdoInactivo
-        '
-        Me.rdoInactivo.AutoSize = True
-        Me.rdoInactivo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdoInactivo.Location = New System.Drawing.Point(111, 350)
-        Me.rdoInactivo.Name = "rdoInactivo"
-        Me.rdoInactivo.Size = New System.Drawing.Size(63, 17)
-        Me.rdoInactivo.TabIndex = 20
-        Me.rdoInactivo.TabStop = True
-        Me.rdoInactivo.Text = "Inactivo"
-        Me.rdoInactivo.UseVisualStyleBackColor = True
-        '
         'rdoInformatica
         '
         Me.rdoInformatica.AutoSize = True
@@ -225,14 +200,23 @@ Partial Class AltaServicio
         Me.rdoInformatica.Text = "Informatica"
         Me.rdoInformatica.UseVisualStyleBackColor = True
         '
+        'chkActivo
+        '
+        Me.chkActivo.AutoSize = True
+        Me.chkActivo.Location = New System.Drawing.Point(50, 347)
+        Me.chkActivo.Name = "chkActivo"
+        Me.chkActivo.Size = New System.Drawing.Size(56, 17)
+        Me.chkActivo.TabIndex = 22
+        Me.chkActivo.Text = "Activo"
+        Me.chkActivo.UseVisualStyleBackColor = True
+        '
         'AltaServicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(580, 422)
+        Me.Controls.Add(Me.chkActivo)
         Me.Controls.Add(Me.rdoInformatica)
-        Me.Controls.Add(Me.rdoInactivo)
-        Me.Controls.Add(Me.rdoActivo)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.rdoTelecomunicaciones)
         Me.Controls.Add(Me.rdoElectricidad)
@@ -272,7 +256,6 @@ Partial Class AltaServicio
     Friend WithEvents rdoElectricidad As RadioButton
     Friend WithEvents rdoTelecomunicaciones As RadioButton
     Friend WithEvents Label7 As Label
-    Friend WithEvents rdoActivo As RadioButton
-    Friend WithEvents rdoInactivo As RadioButton
     Friend WithEvents rdoInformatica As RadioButton
+    Friend WithEvents chkActivo As CheckBox
 End Class

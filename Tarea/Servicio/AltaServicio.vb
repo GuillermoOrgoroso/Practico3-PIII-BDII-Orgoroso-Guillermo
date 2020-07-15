@@ -1,7 +1,7 @@
 ﻿Imports Logica
 Public Class AltaServicio
     Dim tipo As String
-    Dim activo As Boolean
+    Dim activo As Boolean = False
     Private Sub btnDarAlta_Click(sender As Object, e As EventArgs) Handles btnDarAlta.Click
         ControladorServiciovb.DarAlta(txtIDServicio.Text, txtNombre.Text, txtCostoMensual.Text, txtFechoYhora.Text, tipo, activo)
 
@@ -28,11 +28,9 @@ Public Class AltaServicio
         tipo = "Informatica"
     End Sub
 
-    Private Sub rdoActivo_CheckedChanged(sender As Object, e As EventArgs) Handles rdoActivo.CheckedChanged
-        activo = True
-    End Sub
 
-    Private Sub rdoInactivo_CheckedChanged(sender As Object, e As EventArgs) Handles rdoInactivo.CheckedChanged
-        activo = False
+
+    Private Sub chkActivo_CheckedChanged(sender As Object, e As EventArgs) Handles chkActivo.CheckedChanged
+        activo = True
     End Sub
 End Class
