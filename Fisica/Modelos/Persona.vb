@@ -42,9 +42,14 @@
     End Sub
 
     Public Function Listar()
-        Comando.CommandText = "SELECT * FROM persona"
-        Comando.ExecuteReader()
-        Return Reader
+        Try
+            Comando.CommandText = "SELECT * FROM persona"
+            Comando.ExecuteReader()
+            Return Reader
+        Catch ex As Exception
+            MsgBox("Error al listar")
+        End Try
+
     End Function
 
     Public Sub Borrar()
@@ -55,13 +60,23 @@
     End Sub
 
     Public Sub Modificar()
+        Try
+            Comando.CommandText = "UPDATE persona SET nombre = '" + Me.Nombre + "', apellido = '" + Me.Apellido + "', email = '" + Me.Mail + "',FechaHoraCreacion = '" + Me.FechaHoraCreacion + "', activo = '" + Me.Activo + "' WHERE CI = " + Me.Id
+            Comando.ExecuteNonQuery()
+        Catch ex As Exception
+            MsgBox("Error al modificar")
 
-        Comando.CommandText = "UPDATE persona SET nombre = '" + Me.Nombre + "', apellido = '" + Me.Apellido + "', email = '" + Me.Mail + "',FechaHoraCreacion = '" + Me.FechaHoraCreacion + "', activo = '" + Me.Activo + "' WHERE CI = " + Me.Id
-        Comando.ExecuteNonQuery()
+        End Try
+
 
     End Sub
     Public Sub ModificarTel()
-        Comando.CommandText = "UPDATE personaTel SET Telefono = '" + Me.Telefono + "' WHERE IDpersona = '" + Me.Id
-        Comando.ExecuteNonQuery()
+        Try
+            Comando.CommandText = "UPDATE personaTel SET Telefono = '" + Me.Telefono + "' WHERE IDpersona = '" + Me.Id
+            Comando.ExecuteNonQuery()
+        Catch ex As Exception
+            MsgBox("Error al modificar el telefono")
+        End Try
+
     End Sub
 End Class

@@ -11,10 +11,15 @@
 
 
     Public Function listar()
+        Try
+            Comando.CommandText = "SELECT * FROM Servicio"
+            Comando.ExecuteReader()
+            Return Reader
+        Catch ex As Exception
+            MsgBox("Error al listar")
 
-        Comando.CommandText = "SELECT * FROM Servicio"
-        Comando.ExecuteReader()
-        Return Reader
+        End Try
+
 
     End Function
 

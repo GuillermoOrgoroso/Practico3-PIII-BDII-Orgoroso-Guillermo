@@ -19,12 +19,13 @@ Public Module ControladorContrata
         Dim p As New Contrata
 
         p.IDpersona = idpersona
-        p.IDServicio = idservicio
-        p.FechaContratacion = fechacontratacion
-        p.FechaContratacion = fechacontratacion
-        p.FechaFinContrato = fechafincontrato
+            p.IDServicio = idservicio
+            p.FechaContratacion = fechacontratacion
+            p.FechaContratacion = fechacontratacion
+            p.FechaFinContrato = fechafincontrato
 
-        p.Guardar()
+            p.Guardar()
+
 
     End Sub
 

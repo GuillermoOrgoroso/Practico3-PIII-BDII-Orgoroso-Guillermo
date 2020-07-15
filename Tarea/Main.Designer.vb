@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Main
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Main
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ServicioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -46,7 +46,7 @@ Partial Class Main
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ServicioToolStripMenuItem, Me.RegistroToolStripMenuItem, Me.ContratoToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(420, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "Registro"
         '
@@ -60,25 +60,25 @@ Partial Class Main
         'AltaToolStripMenuItem
         '
         Me.AltaToolStripMenuItem.Name = "AltaToolStripMenuItem"
-        Me.AltaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AltaToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.AltaToolStripMenuItem.Text = "Alta"
         '
         'BajaToolStripMenuItem
         '
         Me.BajaToolStripMenuItem.Name = "BajaToolStripMenuItem"
-        Me.BajaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BajaToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.BajaToolStripMenuItem.Text = "Baja"
         '
         'ModificarToolStripMenuItem
         '
         Me.ModificarToolStripMenuItem.Name = "ModificarToolStripMenuItem"
-        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.ModificarToolStripMenuItem.Text = "Modificar"
         '
         'ListarToolStripMenuItem
         '
         Me.ListarToolStripMenuItem.Name = "ListarToolStripMenuItem"
-        Me.ListarToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ListarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.ListarToolStripMenuItem.Text = "Listar"
         '
         'RegistroToolStripMenuItem
@@ -91,25 +91,25 @@ Partial Class Main
         'AltaToolStripMenuItem1
         '
         Me.AltaToolStripMenuItem1.Name = "AltaToolStripMenuItem1"
-        Me.AltaToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.AltaToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
         Me.AltaToolStripMenuItem1.Text = "Alta"
         '
         'BajaToolStripMenuItem1
         '
         Me.BajaToolStripMenuItem1.Name = "BajaToolStripMenuItem1"
-        Me.BajaToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.BajaToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
         Me.BajaToolStripMenuItem1.Text = "Baja"
         '
         'ModificarToolStripMenuItem1
         '
         Me.ModificarToolStripMenuItem1.Name = "ModificarToolStripMenuItem1"
-        Me.ModificarToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.ModificarToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
         Me.ModificarToolStripMenuItem1.Text = "Modificar"
         '
         'ListarToolStripMenuItem1
         '
         Me.ListarToolStripMenuItem1.Name = "ListarToolStripMenuItem1"
-        Me.ListarToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.ListarToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
         Me.ListarToolStripMenuItem1.Text = "Listar"
         '
         'ContratoToolStripMenuItem
@@ -122,32 +122,32 @@ Partial Class Main
         'AltaToolStripMenuItem2
         '
         Me.AltaToolStripMenuItem2.Name = "AltaToolStripMenuItem2"
-        Me.AltaToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
+        Me.AltaToolStripMenuItem2.Size = New System.Drawing.Size(125, 22)
         Me.AltaToolStripMenuItem2.Text = "Alta"
         '
         'BajaToolStripMenuItem2
         '
         Me.BajaToolStripMenuItem2.Name = "BajaToolStripMenuItem2"
-        Me.BajaToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
+        Me.BajaToolStripMenuItem2.Size = New System.Drawing.Size(125, 22)
         Me.BajaToolStripMenuItem2.Text = "Baja"
         '
         'ModificarToolStripMenuItem2
         '
         Me.ModificarToolStripMenuItem2.Name = "ModificarToolStripMenuItem2"
-        Me.ModificarToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
+        Me.ModificarToolStripMenuItem2.Size = New System.Drawing.Size(125, 22)
         Me.ModificarToolStripMenuItem2.Text = "Modificar"
         '
         'ListarToolStripMenuItem2
         '
         Me.ListarToolStripMenuItem2.Name = "ListarToolStripMenuItem2"
-        Me.ListarToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
+        Me.ListarToolStripMenuItem2.Size = New System.Drawing.Size(125, 22)
         Me.ListarToolStripMenuItem2.Text = "Listar"
         '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(420, 232)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Main"
