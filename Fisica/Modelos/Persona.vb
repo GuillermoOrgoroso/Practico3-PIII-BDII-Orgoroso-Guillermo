@@ -21,23 +21,58 @@
 
         Comando.CommandText = "BEGIN WORK;"
 
+        'Try
+        '    Comando.CommandText = "INSERT INTO persona VALUES(" + Me.Id + " ','" + Me.Nombre + "','" + Me.Apellido + "','" + Me.Mail + "','" + Me.FechaHoraCreacion + "','" + Me.Activo + ")"
+        '    Comando.ExecuteNonQuery()
+        '    Comando.CommandText = "INSERT INTO personaTel VALUES(" + Me.Id + "','" + Me.Telefono + ")"
+        '    Comando.ExecuteNonQuery()
+
+        'Catch ex As Exception
+        '    Comando.CommandText = "ROLLBACK;"
+        '    Comando.ExecuteNonQuery()
+
+        '    MsgBox("Intente de nuevo")
+
+        'End Try
+        'Comando.CommandText = "COMMIT WORK;"
+        'Comando.ExecuteNonQuery()
+
+        'MsgBox("Persona agregada")
+
+
+
+        Comando.CommandText = "SET AUTOCOMMIT = OFF"
+        Comando.ExecuteNonQuery()
+
+        Comando.CommandText = "LOCK TABLES persona,personaTel READ"
+
+        Comando.CommandText = "START TRANSACTION"
         Try
             Comando.CommandText = "INSERT INTO persona VALUES(" + Me.Id + " ','" + Me.Nombre + "','" + Me.Apellido + "','" + Me.Mail + "','" + Me.FechaHoraCreacion + "','" + Me.Activo + ")"
             Comando.ExecuteNonQuery()
+
             Comando.CommandText = "INSERT INTO personaTel VALUES(" + Me.Id + "','" + Me.Telefono + ")"
             Comando.ExecuteNonQuery()
 
-        Catch ex As Exception
-            Comando.CommandText = "ROLLBACK;"
+            Comando.CommandText = "COMMIT"
             Comando.ExecuteNonQuery()
 
-            MsgBox("Intente de nuevo")
+        Catch ex As Exception
+            Comando.CommandText = "ROLLBACK"
+            Comando.ExecuteNonQuery()
+
+            Comando.CommandText = " UNLOKE TABLES"
+            Comando.ExecuteNonQuery()
+
+
+            Throw New System.Exception("Ingreso de datos fallido.")
+
 
         End Try
-        Comando.CommandText = "COMMIT WORK;"
-        Comando.ExecuteNonQuery()
 
-        MsgBox("Persona agregada")
+
+
+
 
     End Sub
 
