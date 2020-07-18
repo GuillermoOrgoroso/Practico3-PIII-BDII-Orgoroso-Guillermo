@@ -19,27 +19,6 @@
 
     Public Sub Guardar()
 
-        Comando.CommandText = "BEGIN WORK;"
-
-        'Try
-        '    Comando.CommandText = "INSERT INTO persona VALUES(" + Me.Id + " ','" + Me.Nombre + "','" + Me.Apellido + "','" + Me.Mail + "','" + Me.FechaHoraCreacion + "','" + Me.Activo + ")"
-        '    Comando.ExecuteNonQuery()
-        '    Comando.CommandText = "INSERT INTO personaTel VALUES(" + Me.Id + "','" + Me.Telefono + ")"
-        '    Comando.ExecuteNonQuery()
-
-        'Catch ex As Exception
-        '    Comando.CommandText = "ROLLBACK;"
-        '    Comando.ExecuteNonQuery()
-
-        '    MsgBox("Intente de nuevo")
-
-        'End Try
-        'Comando.CommandText = "COMMIT WORK;"
-        'Comando.ExecuteNonQuery()
-
-        'MsgBox("Persona agregada")
-
-
 
         Comando.CommandText = "SET AUTOCOMMIT = OFF"
         Comando.ExecuteNonQuery()
@@ -77,13 +56,11 @@
     End Sub
 
     Public Function Listar()
-        Try
-            Comando.CommandText = "SELECT * FROM persona"
+
+        Comando.CommandText = "SELECT * FROM persona"
             Comando.ExecuteReader()
             Return Reader
-        Catch ex As Exception
-            MsgBox("Error al listar")
-        End Try
+
 
     End Function
 
@@ -95,23 +72,17 @@
     End Sub
 
     Public Sub Modificar()
-        Try
-            Comando.CommandText = "UPDATE persona SET nombre = '" + Me.Nombre + "', apellido = '" + Me.Apellido + "', email = '" + Me.Mail + "',FechaHoraCreacion = '" + Me.FechaHoraCreacion + "', activo = '" + Me.Activo + "' WHERE CI = " + Me.Id
-            Comando.ExecuteNonQuery()
-        Catch ex As Exception
-            MsgBox("Error al modificar")
 
-        End Try
+        Comando.CommandText = "UPDATE persona SET nombre = '" + Me.Nombre + "', apellido = '" + Me.Apellido + "', email = '" + Me.Mail + "',FechaHoraCreacion = '" + Me.FechaHoraCreacion + "', activo = '" + Me.Activo + "' WHERE CI = " + Me.Id
+            Comando.ExecuteNonQuery()
 
 
     End Sub
     Public Sub ModificarTel()
-        Try
-            Comando.CommandText = "UPDATE personaTel SET Telefono = '" + Me.Telefono + "' WHERE IDpersona = '" + Me.Id
+
+        Comando.CommandText = "UPDATE personaTel SET Telefono = '" + Me.Telefono + "' WHERE IDpersona = '" + Me.Id
             Comando.ExecuteNonQuery()
-        Catch ex As Exception
-            MsgBox("Error al modificar el telefono")
-        End Try
+
 
     End Sub
 End Class
