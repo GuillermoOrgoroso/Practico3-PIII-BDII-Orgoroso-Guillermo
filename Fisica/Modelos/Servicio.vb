@@ -11,62 +11,36 @@
 
 
     Public Function listar()
-        Try
-            Comando.CommandText = "SELECT * FROM Servicio"
+
+        Comando.CommandText = "SELECT * FROM Servicio"
             Comando.ExecuteReader()
             Return Reader
-        Catch ex As Exception
-            MsgBox("Error al listar")
-
-        End Try
-
 
     End Function
 
 
     Public Sub Guardar()
-        Try
 
-            Comando.CommandText = "INSERT INTO Servicio VALUES(" + Me.Id + "','" + Me.Nombre + "','" + Me.CostoMensual + " ',' " + Me.Tipo + "','" + Me.FechaHoraCreacion + "','" + Me.Activo + " )"
-            Comando.ExecuteNonQuery()
-            MsgBox("Servicio ingresado al sistema con exito.")
 
-        Catch ex As Exception
-            MsgBox("Error al intentar dar de alta al servicio, intente de nuevo.")
-
-        End Try
-
+        Comando.CommandText = "INSERT INTO Servicio VALUES(" + Me.Id + "','" + Me.Nombre + "','" + Me.CostoMensual + " ',' " + Me.Tipo + "','" + Me.FechaHoraCreacion + "','" + Me.Activo + " )"
+        Comando.ExecuteNonQuery()
 
     End Sub
 
     Public Sub Borrar()
-        Try
-            Comando.CommandText = "DELETE FROM Servicio WHERE ID = " + Me.Id
-            Comando.ExecuteNonQuery()
-            MsgBox("Servicio eliminado con exito.")
 
-        Catch ex As Exception
-            MsgBox("Error al intentar eliminar el servicio del sistema.")
-        End Try
-
+        Comando.CommandText = "DELETE FROM Servicio WHERE ID = " + Me.Id
+        Comando.ExecuteNonQuery()
 
 
     End Sub
 
     Public Function Modificar()
-        Try
-            Comando.CommandText = "UPDATE Servicio SET Nombre = '" + Me.Nombre + " ',CostoMensual = '" + Me.CostoMensual + "', Tipo = '" + Me.Tipo + "', FechaHoraCreacion = '" + Me.FechaHoraCreacion + "', Activo ='" + Me.Activo + "' WHERE ID ='" + Me.Id
-            Comando.ExecuteReader()
 
-            Return Reader
-            MsgBox("Datos del servicio modificados con exito.")
+        Comando.CommandText = "UPDATE Servicio SET Nombre = '" + Me.Nombre + " ',CostoMensual = '" + Me.CostoMensual + "', Tipo = '" + Me.Tipo + "', FechaHoraCreacion = '" + Me.FechaHoraCreacion + "', Activo ='" + Me.Activo + "' WHERE ID ='" + Me.Id
+        Comando.ExecuteReader()
 
-        Catch ex As Exception
-            MsgBox("Error al intentar modificar los datos del servicio")
-
-        End Try
-
-        Return -1
+        Return Reader
 
     End Function
 
