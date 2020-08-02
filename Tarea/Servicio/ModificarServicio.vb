@@ -30,6 +30,12 @@ Public Class ModificarServicio
     End Sub
 
     Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
-        ControladorServiciovb.Modificar(txtIDServicio.Text, txtNombre.Text, txtCostoMensual.Text, txtFechoYhora.Text, tipo, activo)
+        Try
+            ControladorServiciovb.Modificar(txtIDServicio.Text, txtNombre.Text, txtCostoMensual.Text, txtFechoYhora.Text, tipo, activo)
+            MsgBox("Modificado con exito")
+        Catch ex As Exception
+            MsgBox("Error al modificar")
+        End Try
+
     End Sub
 End Class

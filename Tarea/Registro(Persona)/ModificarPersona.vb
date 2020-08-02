@@ -6,7 +6,13 @@ Public Class ModificarPersona
     End Sub
 
     Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
-        ControladorPersona.Modificar(txtCi.Text, txtNombre.Text, txtApellido.Text, txtMail.Text, txtFechaHoraCreacion.Text, activo)
+        Try
+            ControladorPersona.Modificar(txtCi.Text, txtNombre.Text, txtApellido.Text, txtMail.Text, txtFechaHoraCreacion.Text, activo)
+            MsgBox("Modificado con exito!")
+        Catch ex As Exception
+            MsgBox("Error al modificar")
+        End Try
+
 
     End Sub
 

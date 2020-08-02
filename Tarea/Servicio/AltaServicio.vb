@@ -3,7 +3,12 @@ Public Class AltaServicio
     Dim tipo As String
     Dim activo As Boolean = False
     Private Sub btnDarAlta_Click(sender As Object, e As EventArgs) Handles btnDarAlta.Click
-        ControladorServiciovb.DarAlta(txtIDServicio.Text, txtNombre.Text, txtCostoMensual.Text, txtFechoYhora.Text, tipo, activo)
+        Try
+            ControladorServiciovb.DarAlta(txtIDServicio.Text, txtNombre.Text, txtCostoMensual.Text, txtFechoYhora.Text, tipo, activo)
+            MsgBox("Alta exitosa!")
+        Catch ex As Exception
+            MsgBox("Error al intentar dar el alta")
+        End Try
 
     End Sub
 
