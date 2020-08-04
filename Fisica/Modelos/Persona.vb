@@ -24,8 +24,10 @@
         Comando.ExecuteNonQuery()
 
         Comando.CommandText = "LOCK TABLES persona,personaTel READ"
+        Comando.ExecuteNonQuery()
 
         Comando.CommandText = "START TRANSACTION"
+        Comando.ExecuteNonQuery()
         Try
             Comando.CommandText = "INSERT INTO persona VALUES(" + Me.Id + " ','" + Me.Nombre + "','" + Me.Apellido + "','" + Me.Mail + "','" + Me.FechaHoraCreacion + "','" + Me.Activo + ")"
             Comando.ExecuteNonQuery()
