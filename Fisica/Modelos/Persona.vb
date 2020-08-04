@@ -42,8 +42,7 @@
             Comando.CommandText = "ROLLBACK"
             Comando.ExecuteNonQuery()
 
-            Comando.CommandText = " UNLOKE TABLES"
-            Comando.ExecuteNonQuery()
+
 
 
             Throw New System.Exception("Ingreso de datos fallido.")
@@ -51,7 +50,7 @@
 
         End Try
 
-
+        Comando.CommandText = "UNLOKE TABLES"
 
 
 
